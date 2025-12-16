@@ -2,7 +2,7 @@
 * Copyright (c) 2020 Institute of Computing Technology, CAS
 * Copyright (c) 2020 University of Chinese Academy of Sciences
 * 
-* NutShell is licensed under Mulan PSL v2.
+* WuKong is licensed under Mulan PSL v2.
 * You can use this software according to the terms and conditions of the Mulan PSL v2. 
 * You may obtain a copy of Mulan PSL v2 at:
 *             http://license.coscl.org.cn/MulanPSL2 
@@ -15,7 +15,7 @@
 ***************************************************************************************/
 
 package top
-
+//JSH改成和nutshell一样的
 object DefaultSettings {
   def apply() = Map(
     "MemMapBase" -> 0x0000000000000000L,
@@ -25,10 +25,10 @@ object DefaultSettings {
     "ResetVector" -> 0x80000000L,
     "NrExtIntr" -> 1,
 
-    "HasL2cache" -> true,
-    "HasPrefetch" -> true,
-    "EnableMultiIssue" -> false,
-    "EnableOutOfOrderExec" -> false,
+    "HasL2cache" -> false,
+    "HasPrefetch" -> false,
+    "EnableMultiIssue" -> true,
+    "EnableOutOfOrderExec" -> true,
     "HasDTLB" -> true,
     "HasITLB" -> true,
     "HasDcache" -> true,
@@ -38,10 +38,15 @@ object DefaultSettings {
 
     "FPGAPlatform" -> false,
     "EnableILA" -> true,
-    "EnableDebug" -> true,
-    "EnableRVC" -> true
+    "EnableDebug" -> false,
+    "EnableRVC" -> true,
+    "SoCTest" -> false,
+    "CLINTBase" -> 0x0000000038000000L,
+    "PLICBase" -> 0x000000003c000000L
   )
 }
+
+
 
 object PynqSettings {
   def apply() = Map(
@@ -73,6 +78,47 @@ object OOOSettings {
   def apply() = Map(
     "EnableMultiIssue" -> true,
     "EnableOutOfOrderExec" -> true
+  )
+}
+
+object SoCTestSettings {
+  def apply() = Map(
+    "NrExtIntr" -> 1,
+    "EnableILA" -> false,
+    "SoCTest" -> true,
+    "ResetVector" -> 0x30000000L,
+    "MMIOBase" -> 0x0000000010000000L,
+    "MMIOSize" -> 0x0000000070000000L,
+    "CLINTBase"-> 0x0000000002000000L,
+    "PLICBase" -> 0x0000000002010000L,
+    "EnableDebug" -> false,
+    "FPGAPlatform" -> false,
+    "HasL2cache" -> false,
+    "HasPrefetch" -> false,
+
+    "MemMapBase" -> 0x0000000000000000L,
+    "MemMapRegionBits" -> 0,
+//    "MMIOBase" -> 0x0000000040000000L,
+//    "MMIOSize" -> 0x0000000040000000L,
+//    "ResetVector" -> 0x80000000L,
+//    "NrExtIntr" -> 1,
+//
+//    "HasL2cache" -> false,
+//    "HasPrefetch" -> false,
+    "EnableMultiIssue" -> true,
+    "EnableOutOfOrderExec" -> true,
+    "HasDTLB" -> true,
+    "HasITLB" -> true,
+    "HasDcache" -> true,
+    "HasIcache" -> true,
+    "MmodeOnly" -> false,
+    "IsRV32" -> false,
+
+//    "FPGAPlatform" -> false,
+//    "EnableILA" -> true,
+    "EnableDebug" -> false,
+    "EnableRVC" -> true
+//    "SoCTest" -> false
   )
 }
 

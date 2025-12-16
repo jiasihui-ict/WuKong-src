@@ -2,7 +2,7 @@
 * Copyright (c) 2020 Institute of Computing Technology, CAS
 * Copyright (c) 2020 University of Chinese Academy of Sciences
 * 
-* NutShell is licensed under Mulan PSL v2.
+* WuKong is licensed under Mulan PSL v2.
 * You can use this software according to the terms and conditions of the Mulan PSL v2. 
 * You may obtain a copy of Mulan PSL v2 at:
 *             http://license.coscl.org.cn/MulanPSL2 
@@ -70,13 +70,13 @@ class AXI4DMA extends AXI4SlaveModule(new AXI4Lite, new DMABundle) {
     state := Mux(len <= step.U, s_idle, s_read_req)
   }
 
-  dma.ar.bits.prot := AXI4Parameters.PROT_PRIVILEDGED
+//  dma.ar.bits.prot := AXI4Parameters.PROT_PRIVILEDGED
   dma.ar.bits.id := 0.U
   dma.ar.bits.size := log2Ceil(step).U
   dma.ar.bits.burst := AXI4Parameters.BURST_INCR
-  dma.ar.bits.lock := false.B
-  dma.ar.bits.cache := 0.U
-  dma.ar.bits.qos := 0.U
+//  dma.ar.bits.lock := false.B
+//  dma.ar.bits.cache := 0.U
+//  dma.ar.bits.qos := 0.U
   dma.ar.bits.user := 0.U
   dma.ar.bits.len := 0.U
   dma.ar.bits.addr := src
