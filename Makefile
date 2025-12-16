@@ -1,5 +1,5 @@
 TOP = TopMain
-FPGATOP = NutShellFPGATop
+FPGATOP = WuKongFPGATop
 BUILD_DIR = ./build
 TOP_V = $(BUILD_DIR)/$(TOP).v
 SCALA_FILE = $(shell find ./src/main/scala -name '*.scala')
@@ -33,6 +33,8 @@ $(TOP_V): $(SCALA_FILE)
 
 deploy: build/top.zip
 
+jpz_test:
+	mill chiselModule.test.runMain top.CacheSim  -td build  --output-file cache.v BOARD=sim CORE=inorder 
 
 build/top.zip: $(TOP_V)
 	@zip -r $@ $< $<.conf build/*.anno.json
@@ -50,10 +52,10 @@ $(SIM_TOP_V): $(SCALA_FILE) $(TEST_FILE)
 sim-verilog: $(SIM_TOP_V)
 
 emu: sim-verilog
-	$(MAKE) -C ./difftest emu
+	$(MAKE) -C ./difftest emu -j8
 
 emu-run: sim-verilog
-	$(MAKE) -C ./difftest emu-run
+	$(MAKE) -C ./difftest emu-run -j8
 
 init:
 	git submodule update --init
@@ -65,3 +67,6 @@ bsp:
 	mill -i mill.bsp.BSP/install
 
 .PHONY: verilog emu clean help $(REF_SO)
+
+
+
