@@ -1,4 +1,4 @@
-蒋当前代码放在xs-env的目录下面，利用xiangshan的环境进行difftest验证
+将当前代码放在xs-env的目录下面，利用xiangshan的环境进行difftest验证
 # WuKong (悟空)
 
 WuKong(悟空) is a high-performance RISC-V based in-order processor
