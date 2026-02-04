@@ -26,6 +26,9 @@ import top.Settings
 import WuKong.Backend.Backend
 import WuKong.Backend.{ICacheConfig, ICache}
 import top.WuKongConfig
+import device.ITCM
+import device.DTCM
+
 trait HasCoreParameter {
   // General Parameter for WuKong
   val XLEN = if (Settings.get("IsRV32")) 32 else 64
@@ -125,8 +128,18 @@ class Core(implicit val p: WuKongConfig) extends CoreModule {
   for(i <- 0 to 3){frontend.io.out(i) <> Backend.io.in(i)}
   val mmioXbar = Module(new SimpleBusCrossbarNto1(2))
   val s2NotReady = WireInit(false.B)
+
+ ////在settings中获取ITCM的base和size参数
+ //val ITCMBase = Settings.getLong("ITCMBase")
+ //val ITCMSize = Settings.getLong("ITCMSize")
+ //val itcm = Module(new ITCM(memByte = ITCMSize.toInt, base = ITCMBase, userBits = ICacheUserBundleWidth ))
+ //itcm.io.in <> frontend.io.imem
+ //itcm.io.flush := frontend.io.flushVec(0) | frontend.io.bpFlush
   io.imem <> ICache(in = frontend.io.imem, mmio = mmioXbar.io.in(0), flush = (frontend.io.flushVec(0) | frontend.io.bpFlush))(ICacheConfig(ro = true, userBits = ICacheUserBundleWidth))
-  io.dmem <> DCache(in = Backend.io.dmem, mmio = mmioXbar.io.in(1), flush = false.B)(BankedCacheConfig(ro = true))
+  //连接DTCM
+  val DTCM = Module (new DTCM())
+  DTCM.io.in <> Backend.io.dmem
+  io.dmem <> DCache(in = DTCM.io.outMissmem, mmio = mmioXbar.io.in(1), flush = false.B)(BankedCacheConfig(ro = true))
 
   // DMA?
   io.frontend.resp.bits := DontCare

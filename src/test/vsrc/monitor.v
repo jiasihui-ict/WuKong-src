@@ -1,0 +1,25 @@
+`ifdef VERILATOR
+import "DPI-C" function void monitor
+(
+  input  int  trapCode,
+  input  int  trapPC,
+  input  int  cycleCnt,
+  input  int  instrCnt
+);
+`endif
+
+module Monitor(
+  input         clk,
+@@ -15,11 +17,13 @@ module Monitor(
+  input  [31:0] instrCnt
+);
+
+`ifdef VERILATOR
+  always @(posedge clk) begin
+    if (isNoopTrap) monitor(
+      trapCode, trapPC,
+      cycleCnt, instrCnt
+    );
+  end
+`endif
+

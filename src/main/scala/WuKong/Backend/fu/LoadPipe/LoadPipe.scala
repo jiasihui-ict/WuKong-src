@@ -167,12 +167,14 @@ class LoadPipe (implicit val lname:String)extends CoreModule with HasStoreBuffer
     val sbHitData = Mux1H(sbAddrHitVecExpand, sbDataVec)
     val sbHitMask = Mux1H(sbAddrHitVecExpand, sbMaskVec)
     //
-
+   //jsh修改，让mask和data对应，mask采用或，那么data也应该按照对应的掩码覆盖和更新
+    val combined_s3_sb = MaskData(sbHitData, s3Data, MaskExpand(s3Mask))
+    val combined_s2_s3_sb = MaskData(combined_s3_sb, s2Data, MaskExpand(s2Mask))
     val s1isHit = Wire(Bool())
     s1isHit := s2Hit || s3Hit || sbHit
     val s1HitData = PriorityMux(
       Seq(s2Hit, s3Hit, sbHit),
-      Seq(s2Data, s3Data, sbHitData)
+      Seq(combined_s2_s3_sb, combined_s3_sb, sbHitData)
     )
     val s1HitMask = PriorityMux(
       Seq(s2Hit, s3Hit, sbHit),

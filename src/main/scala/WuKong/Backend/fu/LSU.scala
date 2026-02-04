@@ -10,6 +10,7 @@ import chisel3.util.experimental.BoringUtils
 import WuKong.Backend.fu.LoadPipe.LoadPipe
 import utils.stallPointConnect
 import WuKong.{CoreModule, AddressSpace}
+import device.DTCM
 
 object LSUOpType { //TODO: refactor LSU fuop
   def lb   = "b0000000".U
@@ -200,8 +201,11 @@ class LSU extends  CoreModule with HasStoreBufferConst{
   
   val real_bank_conflict = WireInit(false.B)
   BoringUtils.addSink(real_bank_conflict,"real_bank_conflict")
+  //jsh加入MMIO读的stall信号
+  val MMioReadStall = WireInit(false.B)
+  BoringUtils.addSink(MMioReadStall,"MMioReadStall")
 
-  io.memStall := (cacheStall || !cacheIn.ready) && (i0isLoad || i1isLoad || loads2valid0 || loads2valid1) || bufferFullStall || real_bank_conflict
+  io.memStall := MMioReadStall || ( (cacheStall || !cacheIn.ready ) && (i0isLoad || i1isLoad || loads2valid0 || loads2valid1) || bufferFullStall || real_bank_conflict )
 
   lsuPipeIn(0).valid := i0isStore || i1isStore
   lsuPipeIn(0).bits.isStore := i0isStore || i1isStore

@@ -23,6 +23,9 @@ class Backend extends CoreModule with hasBypassConst {
     val redirectOut = new RedirectIO
     val dmem = Vec(2, new SimpleBusUC(addrBits = VAddrBits)) // without dtlb
     //val mmio = new SimpleBusUC
+    //JSH，给ITCM一个stall信号，阻止IFU一直取指
+    val stall = Output(Bool())
+
   })
   def BypassMux(sel:Bool,BypassCtl:Vec[Bool],BypassDataPort:Vec[UInt],rdata:UInt):UInt ={
     Mux(sel,PriorityMux(BypassCtl,BypassDataPort),rdata)
@@ -993,7 +996,8 @@ class Backend extends CoreModule with hasBypassConst {
     BoringUtils.addSource(regfile.io.debugPorts, "dt_irs_gpr")
 
   }
-
+//STALL
+ io.stall := memStall || mduStall 
 
 
 }

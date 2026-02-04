@@ -42,7 +42,9 @@ object DefaultSettings {
     "EnableRVC" -> true,
     "SoCTest" -> false,
     "CLINTBase" -> 0x0000000038000000L,
-    "PLICBase" -> 0x000000003c000000L
+    "PLICBase" -> 0x000000003c000000L,
+    "ITCMBase" -> 0x80000000L,
+    "ITCMSize" -> 0x00010000L
   )
 }
 

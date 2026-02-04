@@ -314,6 +314,27 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
   val meta = Wire(Vec(2, new BankedMetaBundle))
   val dataRead = Wire(Vec(2, UInt(64.W)))
   val wordMask = Wire(Vec(2, UInt(64.W)))
+  ///jsh，在读状态下维持MMIO的状态
+  val mmio0raqfire = WireInit(false.B)
+    mmio0raqfire := io.in(0).valid && io.in(0).bits.mmio && io.in(0).ready
+    dontTouch(mmio0raqfire)
+  val reqIsRead0 = WireInit(false.B)
+    reqIsRead0 := io.in(0).bits.req.isRead()
+    dontTouch(reqIsRead0)
+  val readmmioDelay0 = RegInit(false.B)
+    when(reqIsRead0 && mmio0raqfire){
+      readmmioDelay0 := true.B
+    }.elsewhen(io.mmio.resp.fire()){
+      readmmioDelay0 := false.B
+    }
+  val inReadMMIOState = readmmioDelay0 
+    dontTouch(inReadMMIOState)
+  //加入MMIOread的stall信号，保证在mmio读操作结束之前阻塞流水线
+  val MMioReadStall = WireInit(false.B)
+    MMioReadStall := inReadMMIOState || reqIsRead0 && mmio0raqfire
+    BoringUtils.addSource(MMioReadStall,"MMioReadStall")
+
+  ///
   for(i <- 0 until 2){
     metaWay(i) := io.metaReadResp(i)
     req(i)     := io.in(i).bits.req
@@ -321,9 +342,9 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
     hitVec(i)  := VecInit(
       metaWay(i).map(m => m.valid && (m.tag === addr(i).tag))
     ).asUInt
-    hit(i)     := hitVec(i).orR && io.in(i).valid
+    hit(i)     := hitVec(i).orR && io.in(i).valid 
     miss(i)    := !(hitVec(i).orR) && io.in(i).valid 
-    mmio(i)    := io.in(i).valid && io.in(i).bits.mmio
+    mmio(i)    := io.in(i).valid && io.in(i).bits.mmio 
 
     invalidVec(i) := VecInit(metaWay(i).map(m => !m.valid)).asUInt
     hasInvalidWay(i) := invalidVec(i).orR
@@ -352,7 +373,6 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
     wordMask(i) := Mux(req(i).isWrite(), MaskExpand(req(i).wmask), 0.U(DataBits.W))
 
   }
-
 
   val hitWrite = hit(0) && req(0).isWrite()
 
@@ -541,9 +561,12 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
         state := s_mmioResp
       }
     }
+    //jsh修改，只要mmio响应完成就可以返回等待状态
     is(s_mmioResp) {
       when(io.mmio.resp.fire()) {
-        state := Mux(mmio(0), s_wait_resp, s_idle)
+        state := Mux(readmmioDelay0 , s_idle ,
+                     Mux(mmio(0), s_wait_resp, s_idle)
+                    )
       }
     }
 
@@ -627,13 +650,18 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
   
 
   // out is valid when cacheline is refilled
-  io.out(0).valid := io.in(0).valid && Mux(
+  //JSH加入mmio读的valid信号
+  io.out(0).valid := Mux(mmio0raqfire && reqIsRead0 ,false.B,
+  Mux(inReadMMIOState,io.mmio.resp.valid,
+  io.in(0).valid && Mux(
     hit(0) || storeHit,
     Mux(process_channel0,false.B,Mux(process_channel1, io.out(1).valid, true.B)),
     Mux(bank_conflict && (state === s_wait_resp) , io.out(1).valid , Mux(both_miss,io.out(1).valid,state === s_wait_resp))
   )
+  )
+  )
 
-  io.out(1).valid := io.in(1).valid && Mux(
+  io.out(1).valid :=io.in(1).valid && Mux(
     hit(1),  //
     true.B,
     Mux(bank_conflict,false.B, Mux(both_miss,both_miss_refill_at_channel1 && state === s_wait_resp,state === s_wait_resp))
@@ -663,8 +691,15 @@ sealed class BankedCacheStage2(implicit val cacheConfig: BankedCacheConfig)
     release_later := false.B
   }
   io.release_later := release_later
-  io.out(0).bits.rdata := Mux(process_channel1,conflict_read_buffer,Mux(hit(0), dataRead(0), Mux(both_miss,double_miss_read_buffer,inRdataRegDemand)))
-  io.out(1).bits.rdata := Mux(hit(1), dataRead(1), inRdataRegDemand)
+  //jsh加入mmio的data
+  //io.out(0).bits.rdata := Mux(process_channel1,conflict_read_buffer,Mux(hit(0), dataRead(0), Mux(both_miss,double_miss_read_buffer,inRdataRegDemand)))
+  //io.out(1).bits.rdata := Mux(hit(1), dataRead(1), inRdataRegDemand)
+    io.out(0).bits.rdata := Mux(mmio0raqfire && reqIsRead0 , 0.U,
+    Mux(inReadMMIOState, io.mmio.resp.bits.rdata, 
+    Mux(process_channel1,conflict_read_buffer,Mux(hit(0), dataRead(0), Mux(both_miss,double_miss_read_buffer,inRdataRegDemand))))
+    )
+    io.out(1).bits.rdata := Mux(hit(1), dataRead(1), inRdataRegDemand)
+    
 
   io.out(0).bits.cmd := Mux(
     io.in(0).bits.req.isRead(),
