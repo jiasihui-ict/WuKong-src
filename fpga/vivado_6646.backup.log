@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 26 07:59:28 2026
+# Process ID: 6646
+# Current directory: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga
+# Command line: vivado
+# Log file: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.log
+# Journal file: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lijinming/vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 6721.414 ; gain = 234.316 ; free physical = 254099 ; free virtual = 257544
+launch_sdk -workspace /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk -hwspec /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk -hwspec /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 26 08:42:01 2026...

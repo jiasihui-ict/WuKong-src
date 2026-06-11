@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 26 07:59:28 2026
+# Process ID: 6646
+# Current directory: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga
+# Command line: vivado
+# Log file: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.log
+# Journal file: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.xpr
+launch_sdk -workspace /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk -hwspec /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf
+update_compile_order -fileset sources_1

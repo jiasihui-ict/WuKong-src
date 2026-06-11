@@ -1,0 +1,2762 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 3401319
+License: Customer
+
+Current time: 	Wed Jun 10 06:56:52 UTC 2026
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 5.4.0-216-generic
+OS Architecture: amd64
+Available processors (cores): 40
+
+Display: localhost:10.0
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 1,132 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/lijinming/vivado/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/home/lijinming/vivado/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lijinming
+User home directory: /home/lijinming
+User working directory: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga
+User country: 	null
+User language: 	en
+User locale: 	en
+
+RDI_BASEROOT: /home/lijinming/vivado/Vivado
+HDI_APPROOT: /home/lijinming/vivado/Vivado/2019.1
+RDI_DATADIR: /home/lijinming/vivado/Vivado/2019.1/data
+RDI_BINDIR: /home/lijinming/vivado/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/lijinming/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/lijinming/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/lijinming/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/home/lijinming/vivado/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.log
+Vivado journal file location: 	/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3401319-node-client1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/lijinming/vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /home/lijinming/vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /home/lijinming/vivado/Vivado/2019.1
+XILINX_SDK: /home/lijinming/vivado/SDK/2019.1
+XILINX_VIVADO: /home/lijinming/vivado/Vivado/2019.1
+XILINX_VIVADO_HLS: /home/lijinming/vivado/Vivado/2019.1
+
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,091 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 92 MB (+93623kb) [00:00:08]
+// [Engine Memory]: 1,078 MB (+979048kb) [00:00:08]
+// Opening Vivado Project: board/pynq/build/myproject-pynq/myproject-pynq.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project board/pynq/build/myproject-pynq/myproject-pynq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,065 MB. GUI used memory: 52 MB. Current time: 6/10/26, 6:56:54 AM UTC
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  4796 ms.
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+2865kb) [00:00:18]
+// [GUI Memory]: 112 MB (+8941kb) [00:00:19]
+// [Engine Memory]: 1,133 MB (+1315kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  2075 ms.
+// Tcl Message: open_project board/pynq/build/myproject-pynq/myproject-pynq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lijinming/vivado/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 6614.121 ; gain = 108.434 ; free physical = 195361 ; free virtual = 220300 
+// Project name: myproject-pynq; location: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq; part: xc7z045ffg900-2
+// [Engine Memory]: 1,272 MB (+85560kb) [00:00:21]
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 58 MB. Current time: 6/10/26, 6:57:09 AM UTC
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top_wrapper (system_top_wrapper.v)]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (TopMain.v)]", 7); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (TopMain.v), WuKong : WuKong (TopMain.v)]", 8); // B (F, cl)
+// [Engine Memory]: 1,369 MB (+35011kb) [00:00:59]
+// [GUI Memory]: 121 MB (+2906kb) [00:04:02]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 324 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,444 MB (+7390kb) [00:06:08]
+// Tcl Message: Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 Successfully read diagram <system_top> from BD file </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (by)
+// 'bB' command handler elapsed time: 3 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 66 MB. Current time: 6/10/26, 7:02:54 AM UTC
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 7021.043 ; gain = 52.199 ; free physical = 195227 ; free virtual = 220167 
+dismissDialog("Open Block Design"); // by (cl)
+// [GUI Memory]: 128 MB (+973kb) [00:07:06]
+// Elapsed time: 113 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 674, 463, 1844, 900, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ae (an, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// [GUI Memory]: 144 MB (+10438kb) [00:08:09]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// by (cl):  Confirm Delete : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets rv_system/WuKong_0_io_ila_WBUpc] [get_bd_nets rv_system/WuKong_0_io_ila_WBUvalid] [get_bd_nets rv_system/WuKong_0_io_ila_WBUrfWen] [get_bd_nets rv_system/WuKong_0_io_ila_WBUrfDest] [get_bd_nets rv_system/WuKong_0_io_ila_WBUrfData] [get_bd_nets rv_system/WuKong_0_io_ila_InstrCnt] [get_bd_cells rv_system/system_ila_0] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 77 MB. Current time: 6/10/26, 7:05:00 AM UTC
+// Elapsed time: 52 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+// Elapsed time: 29 seconds
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// Tcl Command: 'file mkdir /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1'
+// C (cl): Create Constraints File: addNotify
+// Tcl Message: file mkdir /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1 
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "aaaa"); // Y (D, C)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+dismissDialog("Create Constraints File"); // C (cl)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 39 seconds
+// Tcl Command: 'file mkdir /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1/new'
+dismissDialog("Add Sources"); // c (cl)
+// by (cl):  Add Constraint  : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+// Tcl Message: file mkdir /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1/new 
+// Tcl Message: close [ open /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1/new/aaaa.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1/new/aaaa.xdc 
+dismissDialog("Add Constraint"); // by (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 20); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, aaaa.xdc]", 22, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, aaaa.xdc]", 22, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("aaaa.xdc", 358, 229); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System (2)", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, "Address Editor_auto_assign_address_rsb"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS
+// Tcl Command: 'assign_bd_address'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address 
+// by (cl):  Auto Assign Address : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2519 ms.
+dismissDialog("Auto Assign Address"); // by (cl)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aaaa.xdc", 3); // k (j, cl)
+selectCodeEditor("aaaa.xdc", 322, 139); // cl (w, cl)
+// HOptionPane Error: 'The paste failed. The clipboard content is not text. (Paste Error)'
+typeControlKey((HResource) null, "aaaa.xdc", 'v'); // cl (w, cl)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectCodeEditor("aaaa.xdc", 321, 84); // cl (w, cl)
+typeControlKey((HResource) null, "aaaa.xdc", 'v'); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System (2)", 2); // k (j, cl)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// by (cl):  Validate Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// [GUI Memory]: 153 MB (+1563kb) [00:10:32]
+// Tcl Message: INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. 
+// dN (cl): Critical Messages: addNotify
+dismissDialog("Validate Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (dN)
+dismissDialog("Critical Messages"); // dN (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,542 MB. GUI used memory: 79 MB. Current time: 6/10/26, 7:07:20 AM UTC
+// [Engine Memory]: 1,542 MB (+27290kb) [00:10:36]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System (2)", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_SYSTEM, "System"); // gl
+// Elapsed time: 24 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+dismissDialog("Save Constraints"); // by (cl)
+// f (cl): Launch Runs: addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference system_top_WuKong_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: Upgrading '/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd' 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated system_top_WuKong_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 20 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 81 MB. Current time: 6/10/26, 7:08:15 AM UTC
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.v 
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/sim/system_top.v VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.v Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_clkrst/axi_gpio_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_clkrst/clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_clkrst/uncorerst . 
+// [Engine Memory]: 1,643 MB (+24391kb) [00:11:39]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/WuKong_0 . 
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/axi_protocol_convert_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/axi_protocol_convert_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/c_shift_ram_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/c_shift_ram_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/util_vector_logic_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh Generated Block Design Tcl file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl Generated Hardware Definition File /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,847 MB. GUI used memory: 84 MB. Current time: 6/10/26, 7:08:40 AM UTC
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 10 07:08:44 2026] Launched synth_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 7429.336 ; gain = 321.699 ; free physical = 194968 ; free virtual = 219932 
+// TclEventType: RUN_STATUS_CHANGE
+// aY (cl): Launch Run Critical Messages: addNotify
+// [Engine Memory]: 1,847 MB (+127860kb) [00:12:02]
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 42 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+// 'k' command handler elapsed time: 54 seconds
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  6401 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3437 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3598 ms.
+// [GUI Memory]: 162 MB (+1567kb) [00:13:02]
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2096 ms. Increasing delay to 6288 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4978 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2844 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 184 MB (+14674kb) [00:13:29]
+// WARNING: HEventQueue.dispatchEvent() is taking  3126 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  4566 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3262 ms. Increasing delay to 9786 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3908 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  4816 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  8240 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  11545 ms.
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: Thread-1
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Thread-773
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Monitor HEventQueue
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eAO(SourceFile:484)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Thread-27
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: Update Runs Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.A.construct(SourceFile:316)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1847)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Refresh Filesets Swing Worker
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.y.construct(SourceFile:2494)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Process Messages
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:205)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-XAWT
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.ReentrantLock.lock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.SunToolkit.awtLock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.b(SourceFile:1095)
+// 	at ui.PlanAhead.jswMain(SourceFile:1150)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: AWT-EventQueue-1
+// 	at java.desktop@9.0.4/sun.awt.X11.XRobotPeer.getRGBPixelsImpl(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XRobotPeer.getRGBPixels(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Robot.createCompatibleImage(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Robot.createScreenCapture(Unknown Source)
+// 	at com.jidesoft.alert.a.<init>(Unknown Source)
+// 	at com.jidesoft.alert.Alert.a(Unknown Source)
+// 	at com.jidesoft.alert.Alert.internalShowPopup(Unknown Source)
+// 	at com.jidesoft.popup.JidePopup.showPopup(Unknown Source)
+// 	at com.jidesoft.popup.JidePopup.showPopup(Unknown Source)
+// 	at ui.utils.i.g.a.showPopup(SourceFile:123)
+// 	at ui.project.n.actionPerformed(SourceFile:420)
+// 	at java.desktop@9.0.4/javax.swing.Timer.fireActionPerformed(Unknown Source)
+// 	at ui.utils.B.fireActionPerformed(SourceFile:117)
+// 	at java.desktop@9.0.4/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Elapsed time: 1078 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aR, cl): FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,868 MB. GUI used memory: 110 MB. Current time: 6/10/26, 7:26:51 AM UTC
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+// [Engine Memory]: 2,115 MB (+184038kb) [00:30:09]
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cl): FALSE
+// [Engine Memory]: 2,322 MB (+106858kb) [00:30:11]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, system_top, system_top_WuKong_0_0_synth_1, [Synth 8-439] module 'array_ext' not found [/home/lijinming/xiaohe-env/xs-env/NutShell/build/TopMain.v:143108]. ]", 4, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/lijinming/xiaohe-env/xs-env/NutShell/build/TopMain.v;-;;-;16;-;line;-;143108;-;;-;16;-;"); // ah (O, cl)
+// [GUI Memory]: 271 MB (+80715kb) [00:30:15]
+// [Engine Memory]: 2,574 MB (+141714kb) [00:30:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  2360 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3451 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 160 MB. Current time: 6/10/26, 7:27:10 AM UTC
+// Elapsed time: 110 seconds
+selectCodeEditor("TopMain.v", 66, 142); // cl (w, cl)
+selectCodeEditor("TopMain.v", 442, 257); // cl (w, cl)
+// Elapsed time: 964 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3705 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2759 ms to process. Increasing delay to 2000 ms.
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 358 MB (+77944kb) [00:48:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3484 ms.
+// Elapsed time: 14 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run system_top_WuKong_0_0_synth_1 
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: IP_LOCK_CHANGE
+dismissDialog("Launch Runs"); // f (cl)
+// Tcl Message: update_module_reference system_top_WuKong_0_0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_DELETE
+// Tcl Message: Upgrading '/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated system_top_WuKong_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs synth_1 -jobs 20 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. 
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.v 
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/sim/system_top.v VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.v Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh Generated Block Design Tcl file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl Generated Hardware Definition File /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1149 ms.
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 10 07:45:37 2026] Launched system_top_WuKong_0_0_synth_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/system_top_WuKong_0_0_synth_1/runme.log [Wed Jun 10 07:45:37 2026] Launched synth_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 7762.684 ; gain = 0.000 ; free physical = 194497 ; free virtual = 219498 
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 38 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+// 'k' command handler elapsed time: 46 seconds
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// Elapsed time: 352 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aR, cl): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cl): TRUE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // g (aR, cl): TRUE
+selectCheckBox(PAResourceItoN.MsgView_STATUS_MESSAGES, (String) null, true); // g (aR, cl): TRUE
+// Elapsed time: 271 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cl)
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run system_top_WuKong_0_0_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1241 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,296 MB. GUI used memory: 188 MB. Current time: 6/10/26, 7:57:10 AM UTC
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 312 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// by (cl):  Refresh Changed Modules : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_module_reference system_top_WuKong_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Upgrading '/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated system_top_WuKong_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+dismissDialog("Refresh Changed Modules"); // by (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopMain.v", 2); // k (j, cl)
+// Elapsed time: 27 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (TopMain.v), WuKong : WuKong (TopMain.v), core : Core (TopMain.v)]", 27, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (TopMain.v), WuKong : WuKong (TopMain.v), core : Core (TopMain.v)]", 27, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  2340 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3892 ms.
+selectCodeEditor("TopMain.v", 854, 292); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopMain.v", 516, 203); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  4100 ms.
+// k (cl): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cl)
+dismissDialog("Text Changed"); // k (cl)
+selectCodeEditor("TopMain.v", 418, 204); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  4079 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4223 ms.
+// Elapsed time: 11 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: IP_LOCK_CHANGE
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference system_top_WuKong_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Upgrading '/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd' 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated system_top_WuKong_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 -jobs 20 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/system_top.bd>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.v 
+// Tcl Message: VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/sim/system_top.v VHDL Output written to : /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.v Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui>  Wrote  : </home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ui/bd_b096ec45.ui>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_cc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_2/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh Generated Block Design Tcl file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl Generated Hardware Definition File /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/synth/system_top.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1275 ms.
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 10 08:03:35 2026] Launched system_top_WuKong_0_0_synth_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/system_top_WuKong_0_0_synth_1/runme.log [Wed Jun 10 08:03:35 2026] Launched synth_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 7762.684 ; gain = 0.000 ; free physical = 194346 ; free virtual = 219348 
+// aY (cl): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 60 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aY)
+// 'k' command handler elapsed time: 66 seconds
+dismissDialog("Launch Run Critical Messages"); // aY (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3463 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1089 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,679 MB. GUI used memory: 240 MB. Current time: 6/10/26, 8:17:20 AM UTC
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 1029 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cl)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Set Up Debug]", 18, false); // u (O, cl)
+// by (cl):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z045ffg900-2 
+// WARNING: HEventQueue.dispatchEvent() is taking  1208 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,741 MB. GUI used memory: 240 MB. Current time: 6/10/26, 8:21:40 AM UTC
+// [Engine Memory]: 2,993 MB (+304736kb) [01:25:10]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,072 MB. GUI used memory: 240 MB. Current time: 6/10/26, 8:22:00 AM UTC
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 3,701 MB (+585315kb) [01:25:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  1207 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,706 MB. GUI used memory: 241 MB. Current time: 6/10/26, 8:22:18 AM UTC
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/lijinming/vivado/Vivado/2019.1/data/parts/xilinx/zynq/devint/zynq/xc7z045/xc7z045.xgd; ZipEntry: xc7z045_detail.xgd elapsed time: 0.7s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2725 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [/home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 8673.355 ; gain = 673.848 ; free physical = 193054 ; free virtual = 218243 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8681.652 ; gain = 0.000 ; free physical = 193163 ; free virtual = 218352 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2347 instances were transformed.   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 121 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 88 instances   RAM64X1S => RAM64X1S (RAMS64E): 2136 instances  
+// ExpRunCommands.openSynthResults elapsed time: 53.2s
+// Tcl Message: open_run: Time (s): cpu = 00:01:32 ; elapsed = 00:00:52 . Memory (MB): peak = 8745.789 ; gain = 901.234 ; free physical = 192965 ; free virtual = 218154 
+// Run Command: PAResourceCommand.PACommandNames_DEBUG_WIZARD
+// N (cl): Set Up Debug: addNotify
+// Elapsed time: 53 seconds
+dismissDialog("Open Synthesized Design"); // by (cl)
+// by (N):  Filtering Net and Tracing Clock Domain : addNotify
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 14.3s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,846 MB. GUI used memory: 282 MB. Current time: 6/10/26, 8:22:36 AM UTC
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1661ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1665 ms.
+// Elapsed time: 22 seconds
+selectButton("NEXT", "Next >"); // JButton (j, N)
+dismissDialog("Filtering Net and Tracing Clock Domain"); // by (N)
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_arburst (2) ; undefined ; LUT1 ; Data and Trigger", 9, "undefined", 1, true); // ap (O, N) - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_arid (4) ; undefined ; LUT1 ; Data and Trigger", 10, "undefined", 1, true, false, true, false, false, false); // ap (O, N) - Control Key - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen (8) ; partially defined ; (Multiple) ; Data and Trigger", 11, "partially defined", 1, true, false, true, false, false, false); // ap (O, N) - Control Key - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_awburst (2) ; undefined ; (Multiple) ; Data and Trigger", 14, "undefined", 1, true, false, true, false, false, false); // ap (O, N) - Control Key - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_awid (4) ; undefined ; GND ; Data and Trigger", 15, "undefined", 1, true, false, true, false, false, false); // ap (O, N) - Control Key - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen (8) ; partially defined ; (Multiple) ; Data and Trigger", 16, "partially defined", 1, true, false, true, false, false, false); // ap (O, N) - Control Key - Node
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/io_mmio_awid (4) ; undefined ; GND ; Data and Trigger", 15, "undefined", 1, true, false, false, false, true, false); // ap (O, N) - Popup Trigger - Node
+selectMenuItem(PAResourceAtoD.DebugWizard_SELECT_CLOCK_DOMAIN, "Select Clock Domain..."); // U (an, N)
+// Tcl Command: 'show_objects -name CLK_NET0.5708015481856974 [get_nets -hierarchical -filter {TYPE == "GLOBAL_CLOCK"}]'
+// aV (cl): Select Clock Domain: addNotify
+// TclEventType: SHOW_OBJECTS
+// by (aV):  Find Nets as Clock Domains : addNotify
+selectTree(PAResourceOtoP.PickClockDomainNetDialog_CLOCK_DOMAIN_NETS_TREE, "[myproject-pynq, system_top_i/processing_system7_0/inst/FCLK_CLK0]", 2, false); // aZ (O, aV)
+dismissDialog("Find Nets as Clock Domains"); // by (aV)
+selectTree(PAResourceOtoP.PickClockDomainNetDialog_CLOCK_DOMAIN_NETS_TREE, "[myproject-pynq, system_top_i/hier_clkrst/clk_wiz_0/inst/coreclk]", 1, false); // aZ (O, aV)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aV)
+dismissDialog("Select Clock Domain"); // aV (cl)
+// PAPropertyPanels.initPanels (pipeStage7_io_right_ready) elapsed time: 0.2s
+selectTreeTable(PAResourceAtoD.DebugWizard_CHIPSCOPE_TREE_TABLE, "system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_ready ; undefined ; VCC ; Data and Trigger", 75, "undefined", 1, false, false, false, false, true, false); // ap (O, N) - Popup Trigger
+selectMenuItem(PAResourceAtoD.DebugWizard_SELECT_CLOCK_DOMAIN, "Select Clock Domain..."); // U (an, N)
+// Tcl Command: 'show_objects -name CLK_NET0.18345740684075296 [get_nets -hierarchical -filter {TYPE == "GLOBAL_CLOCK"}]'
+// aV (cl): Select Clock Domain: addNotify
+// TclEventType: SHOW_OBJECTS
+// by (aV):  Find Nets as Clock Domains : addNotify
+dismissDialog("Find Nets as Clock Domains"); // by (aV)
+selectTree(PAResourceOtoP.PickClockDomainNetDialog_CLOCK_DOMAIN_NETS_TREE, "[myproject-pynq, system_top_i/hier_clkrst/clk_wiz_0/inst/clkfbout_buf_system_top_clk_wiz_0_0]", 3, false); // aZ (O, aV)
+selectTree(PAResourceOtoP.PickClockDomainNetDialog_CLOCK_DOMAIN_NETS_TREE, "[myproject-pynq, system_top_i/hier_clkrst/clk_wiz_0/inst/coreclk]", 1, false); // aZ (O, aV)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aV)
+dismissDialog("Select Clock Domain"); // aV (cl)
+selectButton("NEXT", "Next >"); // JButton (j, N)
+selectCheckBox(PAResourceAtoD.DebugWizard_CAPTURE_CONTROL, "Capture control", true); // g (d, N): TRUE
+selectCheckBox(PAResourceAtoD.DebugWizard_ADVANCED_TRIGGER, "Advanced trigger", true); // g (d, N): TRUE
+selectButton("NEXT", "Next >"); // JButton (j, N)
+selectButton("FINISH", "Finish"); // JButton (j, N)
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: DEBUG_CORE_ADD
+// TclEventType: DEBUG_GRAPH_STALE
+// TclEventType: NETLIST_UPDATE
+// by (N):  Set Up Debug : addNotify
+// Tcl Message: create_debug_core u_ila_0 ila 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_TRIGIN_EN false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: startgroup  
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ] 
+// TclEventType: DEBUG_CORE_CONFIG_CHANGE
+// Tcl Message: endgroup 
+// Tcl Message: connect_debug_port u_ila_0/clk [get_nets [list system_top_i/hier_clkrst/clk_wiz_0/inst/coreclk ]] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe0] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe1] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe2] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 39 [get_debug_ports u_ila_0/probe3] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 7 [get_debug_ports u_ila_0/probe4] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe4 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[0]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[1]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[2]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[3]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[4]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[5]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_bits_fuOpType[6]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe5] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 39 [get_debug_ports u_ila_0/probe6] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe7] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe8] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe9] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe10] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe11] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe12] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe13] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe14] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe15] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe16] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe17] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 7 [get_debug_ports u_ila_0/probe18] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe18 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[0]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[1]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[2]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[3]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[4]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[5]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_bits_func[6]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe19] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 7 [get_debug_ports u_ila_0/probe20] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe20 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[0]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[1]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[2]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[3]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[4]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[5]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_bits_func[6]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 39 [get_debug_ports u_ila_0/probe21] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 7 [get_debug_ports u_ila_0/probe22] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe22 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[0]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[1]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[2]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[3]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[4]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[5]} {system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_bits_fuOpType[6]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe23] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe24] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe25] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe25 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_cmd[0]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_cmd[1]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_cmd[2]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_cmd[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe26] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe27] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe27] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe27 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_bits_cmd[0]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_bits_cmd[1]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_bits_cmd[2]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_bits_cmd[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe28] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe28] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 8 [get_debug_ports u_ila_0/probe29] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe29] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe29 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[0]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[1]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[2]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[3]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[4]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[5]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[6]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_wmask[7]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe30] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe30] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 3 [get_debug_ports u_ila_0/probe31] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe31] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe31 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_size[0]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_size[1]} {system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_bits_size[2]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 2 [get_debug_ports u_ila_0/probe32] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe32] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe32 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_bresp[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_bresp[1]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe33] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe33] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe33 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_rid[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_rid[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_rid[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_rid[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 8 [get_debug_ports u_ila_0/probe34] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe34] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe34 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[3]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[4]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[5]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[6]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awlen[7]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 8 [get_debug_ports u_ila_0/probe35] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe35] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe35 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[3]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[4]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[5]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[6]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_wstrb[7]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 2 [get_debug_ports u_ila_0/probe36] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe36] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe36 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_rresp[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_rresp[1]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe37] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe37] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe38] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe38] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe38 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_bid[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_bid[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_bid[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_bid[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe39] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe39] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 3 [get_debug_ports u_ila_0/probe40] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe40] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe40 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_awsize[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awsize[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awsize[2]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 64 [get_debug_ports u_ila_0/probe41] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe41] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 2 [get_debug_ports u_ila_0/probe42] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe42] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe42 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_awburst[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awburst[1]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 32 [get_debug_ports u_ila_0/probe43] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe43] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 8 [get_debug_ports u_ila_0/probe44] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe44] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe44 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[3]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[4]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[5]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[6]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arlen[7]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 2 [get_debug_ports u_ila_0/probe45] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe45] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe45 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_arburst[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arburst[1]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 3 [get_debug_ports u_ila_0/probe46] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe46] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe46 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_arsize[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arsize[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arsize[2]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe47] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe47] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe47 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_awid[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awid[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awid[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_awid[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property port_width 4 [get_debug_ports u_ila_0/probe48] 
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe48] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe48 [get_nets [list {system_top_i/rv_system/WuKong_0/inst/io_mmio_arid[0]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arid[1]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arid[2]} {system_top_i/rv_system/WuKong_0/inst/io_mmio_arid[3]} ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe49] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe49] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe49 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_0_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe50] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe50] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe50 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_in_1_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe51] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe51] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe51 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_memStall ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe52] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe52] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe52 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_arready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe53] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe53] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe53 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_arvalid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe54] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe54] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe54 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_awready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe55] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe55] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe55 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_awvalid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe56] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe56] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe56 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_bready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe57] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe57] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe57 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_bvalid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe58] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe58] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe58 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_ready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe59] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe59] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe59 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/io_mmio_req_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe60] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe60] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe60 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_ready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe61] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe61] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe61 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/io_mmio_resp_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe62] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe62] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe62 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_rlast ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe63] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe63] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe63 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_rready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe64] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe64] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe64 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_rvalid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe65] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe65] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe65 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_wlast ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe66] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe66] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe66 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_wready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe67] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe67] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe67 [get_nets [list system_top_i/rv_system/WuKong_0/inst/io_mmio_wvalid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe68] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe68] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe68 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_out_0_ready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe69] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe69] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe69 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_out_0_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe70] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe70] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe70 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_out_1_ready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe71] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe71] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe71 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/LSU/io_out_1_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe72] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe72] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe72 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/io_redirectOut_rtype ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe73] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe73] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe73 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/io_redirectOut_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe74] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe74] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe74 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage6_io_right_valid ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe75] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe75] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: connect_debug_port u_ila_0/probe75 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_ready ]] 
+// TclEventType: NETLIST_UPDATE
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: NETLIST_UPDATE
+// Tcl Message: create_debug_port u_ila_0 probe 
+// Tcl Message: set_property port_width 1 [get_debug_ports u_ila_0/probe76] 
+// Tcl Message: set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe76] 
+// TclEventType: DEBUG_PORT_CONFIG_CHANGE
+// TclEventType: NETLIST_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,855 MB. GUI used memory: 284 MB. Current time: 6/10/26, 8:24:30 AM UTC
+// WARNING: HEventQueue.dispatchEvent() is taking  1765 ms.
+// Tcl Message: connect_debug_port u_ila_0/probe76 [get_nets [list system_top_i/rv_system/WuKong_0/inst/core/Backend/pipeStage7_io_right_valid ]] 
+// TclEventType: DEBUG_GRAPH_STALE
+// Elapsed time: 73 seconds
+dismissDialog("Set Up Debug"); // by (N)
+dismissDialog("Set Up Debug"); // N (cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// A (cl): Out of Date Design: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1116 ms.
+dismissDialog("Save Project"); // al (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (cl): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// by (cl):  Save Constraints : addNotify
+// Tcl Message: set_property target_constrs_file /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.srcs/constrs_1/new/aaaa.xdc [current_fileset -constrset] 
+dismissDialog("Save Constraints"); // a (cl)
+// Tcl Message: save_constraints -force 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// f (cl): Launch Runs: addNotify
+dismissDialog("Save Constraints"); // by (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cl)
+// Tcl Message: launch_runs impl_1 -jobs 20 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.10 . Memory (MB): peak = 9101.328 ; gain = 0.000 ; free physical = 192990 ; free virtual = 218179 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.25 . Memory (MB): peak = 9101.328 ; gain = 0.000 ; free physical = 192952 ; free virtual = 218150 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,886 MB. GUI used memory: 286 MB. Current time: 6/10/26, 8:25:02 AM UTC
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1559ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1559 ms.
+// Elapsed time: 17 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (by)
+// 'c' command handler elapsed time: 30 seconds
+// [Engine Memory]: 3,886 MB (+54kb) [01:28:33]
+expandTreeTable(PAResourceAtoD.DebugView_DEBUG_CORES_TREE_TABLE, "clk (1) ;  ;  ; ", 2); // v (O, cl)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, aaaa.xdc]", 73, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, aaaa.xdc]", 73, false, false, false, false, false, true); // B (F, cl) - Double Click
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Jun 10 08:25:30 2026] Launched impl_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:49 ; elapsed = 00:00:32 . Memory (MB): peak = 9101.328 ; gain = 0.000 ; free physical = 192943 ; free virtual = 218152 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1822 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,896 MB. GUI used memory: 295 MB. Current time: 6/10/26, 8:55:02 AM UTC
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 2768 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cl): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,896 MB. GUI used memory: 290 MB. Current time: 6/10/26, 9:11:47 AM UTC
+// Engine heap size: 3,896 MB. GUI used memory: 291 MB. Current time: 6/10/26, 9:11:47 AM UTC
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// by (cl):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4170 ms.
+// Tcl Message: close_design 
+// WARNING: HEventQueue.dispatchEvent() is taking  1055 ms.
+dismissDialog("Close Design"); // g (cl)
+// Tcl Message: open_run impl_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1289 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,977 MB. GUI used memory: 254 MB. Current time: 6/10/26, 9:12:32 AM UTC
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,484 MB. GUI used memory: 249 MB. Current time: 6/10/26, 9:12:52 AM UTC
+// [Engine Memory]: 4,484 MB (+423537kb) [02:16:10]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1182 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,489 MB. GUI used memory: 249 MB. Current time: 6/10/26, 9:12:59 AM UTC
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2084 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 23168 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 9351.629 ; gain = 158.949 ; free physical = 191942 ; free virtual = 217470 
+// Tcl Message: Restored from archive | CPU: 16.540000 secs | Memory: 178.055290 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 9351.629 ; gain = 158.949 ; free physical = 191942 ; free virtual = 217470 Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 9351.629 ; gain = 0.000 ; free physical = 191979 ; free virtual = 217507 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 11461 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 9076 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 126 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 88 instances   RAM64X1S => RAM64X1S (RAMS64E): 2136 instances   SRLC32E => SRL16E: 1 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:01:16 ; elapsed = 00:01:12 . Memory (MB): peak = 9435.898 ; gain = 334.570 ; free physical = 191870 ; free virtual = 217399 
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  1626 ms.
+// ExpRunCommands.openImplResults elapsed time: 76s
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [Engine Memory]: 4,970 MB (+274055kb) [02:16:22]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 377 MB (+923kb) [02:16:29]
+// [GUI Memory]: 396 MB (+353kb) [02:16:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  13676 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1769 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,224 MB. GUI used memory: 334 MB. Current time: 6/10/26, 9:13:23 AM UTC
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1342 ms.
+// 'dR' command handler elapsed time: 105 seconds
+// Elapsed time: 96 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// [Engine Memory]: 5,220 MB (+1927kb) [02:16:43]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 29.5s
+// Device view-level: 0.0
+// Run Command: PAResourceCommand.PACommandNames_PORTS_WINDOW
+// Elapsed time: 14 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "SW_25671 (2) ; IN ;  ;  ;  ;  ; true ; (Multiple) ; LVCMOS25 ; 2.5 ;  ;  ;  ; NONE ; NONE ; ", 3); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "SW_tri_i (2) ; IN ;  ;  ;  ;  ; true ; (Multiple) ; LVCMOS25 ; 2.5 ;  ;  ;  ; NONE ; NONE ; ", 4); // z (O, cl)
+// [GUI Memory]: 416 MB (+71kb) [02:16:59]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 43, false); // u (O, cl)
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "I/O Ports"); // OverlayTextField (K, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 10 09:13:50 2026] Launched impl_1... Run output will be captured here: /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 261 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cl): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cl)
+// Tcl Message: file mkdir /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk 
+// by (cl):  Export Hardware : addNotify
+// Tcl Message: file copy -force /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.runs/impl_1/system_top_wrapper.sysdef /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf  
+dismissDialog("Export Hardware"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cl): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cl)
+// by (cl):  Launch SDK : addNotify
+// Tcl Message: launch_sdk -workspace /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk -hwspec /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk -hwspec /home/lijinming/xiaohe-env/xs-env/NutShell/fpga/board/pynq/build/myproject-pynq/myproject-pynq.sdk/system_top_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+dismissDialog("Launch SDK"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
